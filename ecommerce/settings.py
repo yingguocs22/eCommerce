@@ -82,17 +82,29 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': '3tier-db-schema',
+#         'USER': 'admin',
+#         'PASSWORD': 'guoying1994322',
+#         # 'HOST': 'database-3tier.c5y2vkxnuuax.us-west-2.rds.amazonaws.com',
+#         'HOST': 'database-3tier.c5y2vkxnuuax.us-west-2.rds.amazonaws.com',
+#         'PORT': '3306',
+#         'OPTIONS': {
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+#         }
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': '3tier-db-schema',
-        'USER': 'admin',
+        'USER': 'root',
         'PASSWORD': 'guoying1994322',
-        'HOST': 'database-3tier.c5y2vkxnuuax.us-west-2.rds.amazonaws.com',
+        'HOST': 'localhost',
         'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
     }
 }
 
